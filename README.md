@@ -18,6 +18,7 @@
 - Colour palette and assets used from the Geckoboard homepage for the purpose of this test
 - npm used for simplicity (I've used pnpm and yarn in the past -- both are great)
 - it should be accessible (it's been tested with lighthouse and a screenreader)
+- NB: I'd usually be more strict about small atomic commits using the conventional commits standard
 
 ### Running the project
 
