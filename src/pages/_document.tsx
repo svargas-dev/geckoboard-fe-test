@@ -1,0 +1,93 @@
+import { Html, Head, Main, NextScript } from 'next/document';
+
+export default function Document() {
+	return (
+		<Html lang="en">
+			<Head>
+				<link
+					rel="apple-touch-icon"
+					sizes="180x180"
+					href="/assets/img/favicon/icon-180x180.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="512x512"
+					href="/assets/img/favicon/icon-512x512.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="384x384"
+					href="/assets/img/favicon/icon-384x384.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="192x192"
+					href="/assets/img/favicon/icon-192x192.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="180x180"
+					href="/assets/img/favicon/icon-180x180.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="152x152"
+					href="/assets/img/favicon/icon-152x152.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="144x144"
+					href="/assets/img/favicon/icon-144x144.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="128x128"
+					href="/assets/img/favicon/icon-128x128.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="120x120"
+					href="/assets/img/favicon/icon-120x120.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="96x96"
+					href="/assets/img/favicon/icon-96x96.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="72x72"
+					href="/assets/img/favicon/icon-72x72.png"
+				/>
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="32x32"
+					href="/assets/img/favicon/favicon.png"
+				/>
+				{/* Preload fonts */}
+				<link
+					rel="preload"
+					href="/assets/fonts/galano-grotesque-bold.woff2"
+					as="font"
+					type="font/woff2"
+					crossOrigin=""
+				/>
+			</Head>
+			<body>
+				<Main />
+				<NextScript />
+			</body>
+		</Html>
+	);
+}

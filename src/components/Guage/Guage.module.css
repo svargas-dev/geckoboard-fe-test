@@ -1,0 +1,128 @@
+.container {
+	width: 50vw;
+	height: 25vw;
+	margin-block-start: 4vw;
+	overflow: hidden;
+	position: relative;
+}
+
+.meter {
+	width: 50vw;
+	height: 50vw;
+	background-image: linear-gradient(
+		90deg,
+		var(--color-cyan) 0%,
+		var(--color-yellow) 33%,
+		var(--color-yellow) 66%,
+		var(--color-purple) 100%
+	);
+	background-size: cover;
+	border-radius: 100%;
+	position: relative;
+}
+
+.meter::after {
+	content: '';
+	position: absolute;
+	bottom: 5%;
+	left: 0;
+	right: 0;
+	margin-inline: auto;
+	width: 90%;
+	height: 90%;
+	border-radius: 100%;
+	background-color: white;
+}
+
+.meter_dial {
+	position: absolute;
+	bottom: -5vw;
+	left: calc(50% - 5vw);
+	width: 10vw;
+	height: 10vw;
+	border-radius: 50%;
+	box-sizing: border-box;
+	background-image: linear-gradient(
+		90deg,
+		#282f60 0%,
+		#282f60 50%,
+		rgba(25, 30, 58, 1) 50%
+	);
+	transition: transform 0.6s ease;
+}
+
+.meter_dial:before,
+.meter_dial:after {
+	position: absolute;
+	top: -4vw;
+	content: ' ';
+	display: block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+}
+
+.meter_dial:before {
+	border-width: 0 2vw 5vw 0px;
+	border-color: transparent transparent #191e3a transparent;
+	left: 50%;
+}
+
+.meter_dial:after {
+	border-width: 0 0 5vw 2vw;
+	border-color: transparent transparent #282f60 transparent;
+	right: 50%;
+}
+
+.meter_dialCenter {
+	position: absolute;
+	left: calc(50% - 2vw);
+	top: calc(50% - 2vw);
+	width: 4vw;
+	height: 4vw;
+	border-radius: 50%;
+	background-color: #7083bd;
+}
+
+.min,
+.max {
+	position: absolute;
+	bottom: 0;
+	font-weight: 600;
+	font-size: var(--font-size-lg);
+	color: rgba(30 30 30 / 0.7);
+}
+
+.min {
+	left: 4vw;
+}
+
+.max {
+	right: 4vw;
+}
+
+.value {
+	width: max-content;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: 9vw;
+	font-size: var(--font-size-xxl);
+	color: var(--color-navy);
+	font-weight: 600;
+}
+
+.unit {
+	width: max-content;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	bottom: calc(10vw + var(--font-size-xxl));
+	font-size: var(--font-size-md);
+	color: var(--color-navy);
+	font-weight: 600;
+}

@@ -1,0 +1,23 @@
+.main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.errorContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 3vw;
+	max-width: 70rem;
+}
+
+.sadFace {
+	margin-block-end: 2rem;
+}
+
+.output {
+	font-size: var(--font-size-lg);
+	text-align: center;
+}
